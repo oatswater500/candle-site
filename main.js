@@ -21,13 +21,13 @@ camera.position.z = 5;
 let candle, flame;
 let loader = new GLTFLoader();
 
-loader.load('蠟燭.glb', function(gltf) {
+loader.load('candle.glb', function(gltf) {
   candle = gltf.scene;
   scene.add(candle);
   candle.position.y = -1;
 });
 
-loader.load('燭火.glb', function(gltf) {
+loader.load('flame.glb', function(gltf) {
   flame = gltf.scene;
   flame.visible = false;
   scene.add(flame);
